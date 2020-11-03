@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper{
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1000px;
+    padding: 0 1rem;
+}
+
+header{
+    min-height: 30%;
+}
+
+#header-info{
+    background: linear-gradient(#141E30, #243B55);;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#header-info h1{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#header-info h2{
+    font-size: 3rem;
+}
+
+#header-controls{
+    background-color: rgb(200, 222, 246);
+}
+
+.controls{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls button{
+    border: none;
+    font-size: 1.2rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    outline: none;
+}
+
+.controls button:hover{
+    transform: scale(1.02);
+}
+
+ul{
+    list-style-type: none;
+}
+
+#game{
+    background: linear-gradient(#141E30, #243B55);
+    min-height: 70vh;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+
+#game ul li button{
+    cursor: pointer;
+    border: 2px solid #ddd;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    background-color: navy;
+    height: 200px;
+    width: 100%;
+    border-radius: 30px;
+    outline:none;
+    transition: all .2s ease-in-out;
+}
+
+#game ul li button:hover{
+    transform: scale(1.02);
+}
+
+.aligner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game ul{
+    display: grid;
+    grid-gap: 1%;
+    grid-template-columns: 200px 200px 200px;
+}
+
+.active{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.disabled{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: none;
+    font-size: 1.2rem
+}
+
+@media screen and (max-width: 768px){
+    #game ul{
+        display: grid;
+        grid-gap: 1%;
+        margin: auto;
+        grid-template-columns: 200px 200px;
+    }
+}
+

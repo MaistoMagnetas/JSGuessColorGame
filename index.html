@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Color Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="header-info">
+            <div class="wrapper">
+                <h1>Guess Color Game</h1>
+                <h2 id="color-field"></h2>
+            </div>
+        </div>
+        <div id="header-controls">
+            <div class="wrapper">
+                <div class="controls">
+                    <button id="retry-btn">New Colors</button>
+                    <div class="complexity">
+                        <button id="easy-btn" class="active">Easy</button>
+                        <button id="hard-btn">Hard</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="game">
+            <div class="wrapper">
+               <div class="aligner">
+                    <ul id="colors-list">
+                    </ul>
+               </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
